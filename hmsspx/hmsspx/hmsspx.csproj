@@ -1,0 +1,448 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4DC1C32C-B027-4775-9C83-7540FA2B59CF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>hmsspx</RootNamespace>
+    <AssemblyName>hmsspx</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile111</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AddLine.gen\AccessRequests_al.cs" />
+    <Compile Include="AddLine.gen\AlternateUrl_al.cs" />
+    <Compile Include="AddLine.gen\AppCatalog_al.cs" />
+    <Compile Include="AddLine.gen\AppContextSite_al.cs" />
+    <Compile Include="AddLine.gen\AppInstanceErrorDetails_al.cs" />
+    <Compile Include="AddLine.gen\AppInstance_al.cs" />
+    <Compile Include="AddLine.gen\AppLicenseCollection_al.cs" />
+    <Compile Include="AddLine.gen\AppLicense_al.cs" />
+    <Compile Include="AddLine.gen\AppPrincipalConfiguration_al.cs" />
+    <Compile Include="AddLine.gen\AppPrincipalCredentialReference_al.cs" />
+    <Compile Include="AddLine.gen\App_al.cs" />
+    <Compile Include="AddLine.gen\AttachmentCollection_al.cs" />
+    <Compile Include="AddLine.gen\AttachmentCreationInformation_al.cs" />
+    <Compile Include="AddLine.gen\Attachment_al.cs" />
+    <Compile Include="AddLine.gen\BasePermissions_al.cs" />
+    <Compile Include="AddLine.gen\CamlQuery_al.cs" />
+    <Compile Include="AddLine.gen\ChangeAlert_al.cs" />
+    <Compile Include="AddLine.gen\ChangeCollection_al.cs" />
+    <Compile Include="AddLine.gen\ChangeContentType_al.cs" />
+    <Compile Include="AddLine.gen\ChangeField_al.cs" />
+    <Compile Include="AddLine.gen\ChangeFile_al.cs" />
+    <Compile Include="AddLine.gen\ChangeFolder_al.cs" />
+    <Compile Include="AddLine.gen\ChangeGroup_al.cs" />
+    <Compile Include="AddLine.gen\ChangeItem_al.cs" />
+    <Compile Include="AddLine.gen\ChangeList_al.cs" />
+    <Compile Include="AddLine.gen\ChangeLogItemQuery_al.cs" />
+    <Compile Include="AddLine.gen\ChangeQuery_al.cs" />
+    <Compile Include="AddLine.gen\ChangeToken_al.cs" />
+    <Compile Include="AddLine.gen\ChangeUser_al.cs" />
+    <Compile Include="AddLine.gen\ChangeView_al.cs" />
+    <Compile Include="AddLine.gen\ChangeWeb_al.cs" />
+    <Compile Include="AddLine.gen\Change_al.cs" />
+    <Compile Include="AddLine.gen\ClientContext_al.cs" />
+    <Compile Include="AddLine.gen\ContentTypeCollection_al.cs" />
+    <Compile Include="AddLine.gen\ContentTypeCreationInformation_al.cs" />
+    <Compile Include="AddLine.gen\ContentTypeId_al.cs" />
+    <Compile Include="AddLine.gen\ContentType_al.cs" />
+    <Compile Include="AddLine.gen\ContextWebInformation_al.cs" />
+    <Compile Include="AddLine.gen\DocumentLibraryInformation_al.cs" />
+    <Compile Include="AddLine.gen\EventReceiverDefinitionCollection_al.cs" />
+    <Compile Include="AddLine.gen\EventReceiverDefinitionCreationInformation_al.cs" />
+    <Compile Include="AddLine.gen\EventReceiverDefinition_al.cs" />
+    <Compile Include="AddLine.gen\ExternalAppPrincipalCreationParameters_al.cs" />
+    <Compile Include="AddLine.gen\FeatureCollection_al.cs" />
+    <Compile Include="AddLine.gen\Feature_al.cs" />
+    <Compile Include="AddLine.gen\FieldCalculatedErrorValue_al.cs" />
+    <Compile Include="AddLine.gen\FieldCalculated_al.cs" />
+    <Compile Include="AddLine.gen\FieldChoice_al.cs" />
+    <Compile Include="AddLine.gen\FieldCollection_al.cs" />
+    <Compile Include="AddLine.gen\FieldComputed_al.cs" />
+    <Compile Include="AddLine.gen\FieldCreationInformation_al.cs" />
+    <Compile Include="AddLine.gen\FieldCurrency_al.cs" />
+    <Compile Include="AddLine.gen\FieldDateTime_al.cs" />
+    <Compile Include="AddLine.gen\FieldGeolocationValue_al.cs" />
+    <Compile Include="AddLine.gen\FieldLinkCollection_al.cs" />
+    <Compile Include="AddLine.gen\FieldLinkCreationInformation_al.cs" />
+    <Compile Include="AddLine.gen\FieldLink_al.cs" />
+    <Compile Include="AddLine.gen\FieldLookupValue_al.cs" />
+    <Compile Include="AddLine.gen\FieldLookup_al.cs" />
+    <Compile Include="AddLine.gen\FieldMultiChoice_al.cs" />
+    <Compile Include="AddLine.gen\FieldMultiLineText_al.cs" />
+    <Compile Include="AddLine.gen\FieldNumber_al.cs" />
+    <Compile Include="AddLine.gen\FieldRatingScaleQuestionAnswer_al.cs" />
+    <Compile Include="AddLine.gen\FieldRatingScale_al.cs" />
+    <Compile Include="AddLine.gen\FieldStringValues_al.cs" />
+    <Compile Include="AddLine.gen\FieldText_al.cs" />
+    <Compile Include="AddLine.gen\FieldUrlValue_al.cs" />
+    <Compile Include="AddLine.gen\FieldUrl_al.cs" />
+    <Compile Include="AddLine.gen\FieldUserValue_al.cs" />
+    <Compile Include="AddLine.gen\FieldUser_al.cs" />
+    <Compile Include="AddLine.gen\Field_al.cs" />
+    <Compile Include="AddLine.gen\FileCreationInformation_al.cs" />
+    <Compile Include="AddLine.gen\FileSaveBinaryInformation_al.cs" />
+    <Compile Include="AddLine.gen\FileVersion_al.cs" />
+    <Compile Include="AddLine.gen\File_al.cs" />
+    <Compile Include="AddLine.gen\Folder_al.cs" />
+    <Compile Include="AddLine.gen\FormCollection_al.cs" />
+    <Compile Include="AddLine.gen\Form_al.cs" />
+    <Compile Include="AddLine.gen\GroupCollection_al.cs" />
+    <Compile Include="AddLine.gen\GroupCreationInformation_al.cs" />
+    <Compile Include="AddLine.gen\Group_al.cs" />
+    <Compile Include="AddLine.gen\Implementationnotes_al.cs" />
+    <Compile Include="AddLine.gen\InformationRightsManagementSettings_al.cs" />
+    <Compile Include="AddLine.gen\KeyValue_al.cs" />
+    <Compile Include="AddLine.gen\Language_al.cs" />
+    <Compile Include="AddLine.gen\ListCollection_al.cs" />
+    <Compile Include="AddLine.gen\ListCreationInformation_al.cs" />
+    <Compile Include="AddLine.gen\ListDataSource_al.cs" />
+    <Compile Include="AddLine.gen\ListDataValidationExceptionValue_al.cs" />
+    <Compile Include="AddLine.gen\ListDataValidationFailure_al.cs" />
+    <Compile Include="AddLine.gen\ListItemCollectionPosition_al.cs" />
+    <Compile Include="AddLine.gen\ListItemCollection_al.cs" />
+    <Compile Include="AddLine.gen\ListItemCreationInformation_al.cs" />
+    <Compile Include="AddLine.gen\ListItemEntityCollection_al.cs" />
+    <Compile Include="AddLine.gen\ListItemFormUpdateValue_al.cs" />
+    <Compile Include="AddLine.gen\ListItem_al.cs" />
+    <Compile Include="AddLine.gen\ListTemplateCollection_al.cs" />
+    <Compile Include="AddLine.gen\ListTemplate_al.cs" />
+    <Compile Include="AddLine.gen\List_al.cs" />
+    <Compile Include="AddLine.gen\MenuNode_al.cs" />
+    <Compile Include="AddLine.gen\MenuState_al.cs" />
+    <Compile Include="AddLine.gen\NavigationNodeCollection_al.cs" />
+    <Compile Include="AddLine.gen\NavigationNodeCreationInformation_al.cs" />
+    <Compile Include="AddLine.gen\NavigationNode_al.cs" />
+    <Compile Include="AddLine.gen\Navigation_al.cs" />
+    <Compile Include="AddLine.gen\ObjectSharingInformationUser_al.cs" />
+    <Compile Include="AddLine.gen\ObjectSharingInformation_al.cs" />
+    <Compile Include="AddLine.gen\Principal_al.cs" />
+    <Compile Include="AddLine.gen\PropertyValues_al.cs" />
+    <Compile Include="AddLine.gen\PushNotificationSubscriberCollection_al.cs" />
+    <Compile Include="AddLine.gen\PushNotificationSubscriber_al.cs" />
+    <Compile Include="AddLine.gen\RecycleBinItemCollection_al.cs" />
+    <Compile Include="AddLine.gen\RecycleBinItem_al.cs" />
+    <Compile Include="AddLine.gen\RegionalSettings_al.cs" />
+    <Compile Include="AddLine.gen\RelatedFieldCollection_al.cs" />
+    <Compile Include="AddLine.gen\RelatedFieldExtendedDataCollection_al.cs" />
+    <Compile Include="AddLine.gen\RelatedFieldExtendedData_al.cs" />
+    <Compile Include="AddLine.gen\RelatedField_al.cs" />
+    <Compile Include="AddLine.gen\RelatedItemManager_al.cs" />
+    <Compile Include="AddLine.gen\RelatedItem_al.cs" />
+    <Compile Include="AddLine.gen\RenderListDataParameters_al.cs" />
+    <Compile Include="AddLine.gen\RequestContext_al.cs" />
+    <Compile Include="AddLine.gen\RequestVariable_al.cs" />
+    <Compile Include="AddLine.gen\RoleAssignmentCollection_al.cs" />
+    <Compile Include="AddLine.gen\RoleAssignment_al.cs" />
+    <Compile Include="AddLine.gen\RoleDefinitionBindingCollection_al.cs" />
+    <Compile Include="AddLine.gen\RoleDefinitionCollection_al.cs" />
+    <Compile Include="AddLine.gen\RoleDefinitionCreationInformation_al.cs" />
+    <Compile Include="AddLine.gen\RoleDefinition_al.cs" />
+    <Compile Include="AddLine.gen\SecurableObject_al.cs" />
+    <Compile Include="AddLine.gen\ServerSettings_al.cs" />
+    <Compile Include="AddLine.gen\SimpleDataRow_al.cs" />
+    <Compile Include="AddLine.gen\SimpleDataTable_al.cs" />
+    <Compile Include="AddLine.gen\Site_al.cs" />
+    <Compile Include="AddLine.gen\SubwebQuery_al.cs" />
+    <Compile Include="AddLine.gen\ThemeInfo_al.cs" />
+    <Compile Include="AddLine.gen\TimeZoneCollection_al.cs" />
+    <Compile Include="AddLine.gen\TimeZoneInformation_al.cs" />
+    <Compile Include="AddLine.gen\TimeZone_al.cs" />
+    <Compile Include="AddLine.gen\ULS_al.cs" />
+    <Compile Include="AddLine.gen\UpgradeInfo_al.cs" />
+    <Compile Include="AddLine.gen\UsageInfo_al.cs" />
+    <Compile Include="AddLine.gen\UserCollection_al.cs" />
+    <Compile Include="AddLine.gen\UserCreationInformation_al.cs" />
+    <Compile Include="AddLine.gen\UserCustomActionCollection_al.cs" />
+    <Compile Include="AddLine.gen\UserCustomAction_al.cs" />
+    <Compile Include="AddLine.gen\UserIdInfo_al.cs" />
+    <Compile Include="AddLine.gen\User_al.cs" />
+    <Compile Include="AddLine.gen\ViewCollection_al.cs" />
+    <Compile Include="AddLine.gen\ViewCreationInformation_al.cs" />
+    <Compile Include="AddLine.gen\ViewFieldCollection_al.cs" />
+    <Compile Include="AddLine.gen\View_al.cs" />
+    <Compile Include="AddLine.gen\WebCollection_al.cs" />
+    <Compile Include="AddLine.gen\WebCreationInformation_al.cs" />
+    <Compile Include="AddLine.gen\WebInfoCreationInformation_al.cs" />
+    <Compile Include="AddLine.gen\WebInformation_al.cs" />
+    <Compile Include="AddLine.gen\WebProxy_al.cs" />
+    <Compile Include="AddLine.gen\WebRequestInfo_al.cs" />
+    <Compile Include="AddLine.gen\WebResponseInfo_al.cs" />
+    <Compile Include="AddLine.gen\WebTemplateCollection_al.cs" />
+    <Compile Include="AddLine.gen\WebTemplate_al.cs" />
+    <Compile Include="AddLine.gen\Web_al.cs" />
+    <Compile Include="AddLine.gen\XmlSchemaFieldCreationInformation_al.cs" />
+    <Compile Include="AddLine\__generic_al.cs" />
+    <Compile Include="AddLine\__metadata_al.cs" />
+    <Compile Include="App.cs" />
+    <Compile Include="Desc.gen\List_desc.cs" />
+    <Compile Include="LocalStorage.cs" />
+    <Compile Include="Pages.gen\addObj.cs" />
+    <Compile Include="Pages.gen\pageAccessRequests.cs" />
+    <Compile Include="Pages.gen\pageAlternateUrl.cs" />
+    <Compile Include="Pages.gen\pageApp.cs" />
+    <Compile Include="Pages.gen\pageAppCatalog.cs" />
+    <Compile Include="Pages.gen\pageAppContextSite.cs" />
+    <Compile Include="Pages.gen\pageAppInstance.cs" />
+    <Compile Include="Pages.gen\pageAppInstanceErrorDetails.cs" />
+    <Compile Include="Pages.gen\pageAppLicense.cs" />
+    <Compile Include="Pages.gen\pageAppPrincipalConfiguration.cs" />
+    <Compile Include="Pages.gen\pageAppPrincipalCredentialReference.cs" />
+    <Compile Include="Pages.gen\pageAttachment.cs" />
+    <Compile Include="Pages.gen\pageAttachmentCreationInformation.cs" />
+    <Compile Include="Pages.gen\pageBasePermissions.cs" />
+    <Compile Include="Pages.gen\pageCamlQuery.cs" />
+    <Compile Include="Pages.gen\pageChange.cs" />
+    <Compile Include="Pages.gen\pageChangeAlert.cs" />
+    <Compile Include="Pages.gen\pageChangeContentType.cs" />
+    <Compile Include="Pages.gen\pageChangeField.cs" />
+    <Compile Include="Pages.gen\pageChangeFile.cs" />
+    <Compile Include="Pages.gen\pageChangeFolder.cs" />
+    <Compile Include="Pages.gen\pageChangeGroup.cs" />
+    <Compile Include="Pages.gen\pageChangeItem.cs" />
+    <Compile Include="Pages.gen\pageChangeList.cs" />
+    <Compile Include="Pages.gen\pageChangeLogItemQuery.cs" />
+    <Compile Include="Pages.gen\pageChangeQuery.cs" />
+    <Compile Include="Pages.gen\pageChangeToken.cs" />
+    <Compile Include="Pages.gen\pageChangeUser.cs" />
+    <Compile Include="Pages.gen\pageChangeView.cs" />
+    <Compile Include="Pages.gen\pageChangeWeb.cs" />
+    <Compile Include="Pages.gen\pageClientContext.cs" />
+    <Compile Include="Pages.gen\pageContentType.cs" />
+    <Compile Include="Pages.gen\pageContentTypeCreationInformation.cs" />
+    <Compile Include="Pages.gen\pageContentTypeId.cs" />
+    <Compile Include="Pages.gen\pageContextWebInformation.cs" />
+    <Compile Include="Pages.gen\pageDocumentLibraryInformation.cs" />
+    <Compile Include="Pages.gen\pageEventReceiverDefinition.cs" />
+    <Compile Include="Pages.gen\pageEventReceiverDefinitionCreationInformation.cs" />
+    <Compile Include="Pages.gen\pageExternalAppPrincipalCreationParameters.cs" />
+    <Compile Include="Pages.gen\pageFeature.cs" />
+    <Compile Include="Pages.gen\pageField.cs" />
+    <Compile Include="Pages.gen\pageFieldCalculated.cs" />
+    <Compile Include="Pages.gen\pageFieldCalculatedErrorValue.cs" />
+    <Compile Include="Pages.gen\pageFieldChoice.cs" />
+    <Compile Include="Pages.gen\pageFieldComputed.cs" />
+    <Compile Include="Pages.gen\pageFieldCreationInformation.cs" />
+    <Compile Include="Pages.gen\pageFieldCurrency.cs" />
+    <Compile Include="Pages.gen\pageFieldDateTime.cs" />
+    <Compile Include="Pages.gen\pageFieldGeolocationValue.cs" />
+    <Compile Include="Pages.gen\pageFieldLink.cs" />
+    <Compile Include="Pages.gen\pageFieldLinkCreationInformation.cs" />
+    <Compile Include="Pages.gen\pageFieldLookup.cs" />
+    <Compile Include="Pages.gen\pageFieldLookupValue.cs" />
+    <Compile Include="Pages.gen\pageFieldMultiChoice.cs" />
+    <Compile Include="Pages.gen\pageFieldMultiLineText.cs" />
+    <Compile Include="Pages.gen\pageFieldNumber.cs" />
+    <Compile Include="Pages.gen\pageFieldRatingScale.cs" />
+    <Compile Include="Pages.gen\pageFieldRatingScaleQuestionAnswer.cs" />
+    <Compile Include="Pages.gen\pageFieldStringValues.cs" />
+    <Compile Include="Pages.gen\pageFieldText.cs" />
+    <Compile Include="Pages.gen\pageFieldUrl.cs" />
+    <Compile Include="Pages.gen\pageFieldUrlValue.cs" />
+    <Compile Include="Pages.gen\pageFieldUser.cs" />
+    <Compile Include="Pages.gen\pageFieldUserValue.cs" />
+    <Compile Include="Pages.gen\pageFile.cs" />
+    <Compile Include="Pages.gen\pageFileCreationInformation.cs" />
+    <Compile Include="Pages.gen\pageFileSaveBinaryInformation.cs" />
+    <Compile Include="Pages.gen\pageFileVersion.cs" />
+    <Compile Include="Pages.gen\pageFolder.cs" />
+    <Compile Include="Pages.gen\pageForm.cs" />
+    <Compile Include="Pages.gen\pageGroup.cs" />
+    <Compile Include="Pages.gen\pageGroupCreationInformation.cs" />
+    <Compile Include="Pages.gen\pageImplementationnotes.cs" />
+    <Compile Include="Pages.gen\pageInformationRightsManagementSettings.cs" />
+    <Compile Include="Pages.gen\pageKeyValue.cs" />
+    <Compile Include="Pages.gen\pageLanguage.cs" />
+    <Compile Include="Pages.gen\pageList.cs" />
+    <Compile Include="Pages.gen\pageListCreationInformation.cs" />
+    <Compile Include="Pages.gen\pageListDataSource.cs" />
+    <Compile Include="Pages.gen\pageListDataValidationExceptionValue.cs" />
+    <Compile Include="Pages.gen\pageListDataValidationFailure.cs" />
+    <Compile Include="Pages.gen\pageListItem.cs" />
+    <Compile Include="Pages.gen\pageListItemCollectionPosition.cs" />
+    <Compile Include="Pages.gen\pageListItemCreationInformation.cs" />
+    <Compile Include="Pages.gen\pageListItemEntity.cs" />
+    <Compile Include="Pages.gen\pageListItemFormUpdateValue.cs" />
+    <Compile Include="Pages.gen\pageListTemplate.cs" />
+    <Compile Include="Pages.gen\pageMenuNode.cs" />
+    <Compile Include="Pages.gen\pageMenuState.cs" />
+    <Compile Include="Pages.gen\pageNavigation.cs" />
+    <Compile Include="Pages.gen\pageNavigationNode.cs" />
+    <Compile Include="Pages.gen\pageNavigationNodeCreationInformation.cs" />
+    <Compile Include="Pages.gen\pageObjectSharingInformation.cs" />
+    <Compile Include="Pages.gen\pageObjectSharingInformationUser.cs" />
+    <Compile Include="Pages.gen\pagePrincipal.cs" />
+    <Compile Include="Pages.gen\pagePropertyValues.cs" />
+    <Compile Include="Pages.gen\pagePushNotificationSubscriber.cs" />
+    <Compile Include="Pages.gen\pageRecycleBinItem.cs" />
+    <Compile Include="Pages.gen\pageRegionalSettings.cs" />
+    <Compile Include="Pages.gen\pageRelatedField.cs" />
+    <Compile Include="Pages.gen\pageRelatedFieldExtendedData.cs" />
+    <Compile Include="Pages.gen\pageRelatedItem.cs" />
+    <Compile Include="Pages.gen\pageRelatedItemManager.cs" />
+    <Compile Include="Pages.gen\pageRenderListDataParameters.cs" />
+    <Compile Include="Pages.gen\pageRequestContext.cs" />
+    <Compile Include="Pages.gen\pageRequestVariable.cs" />
+    <Compile Include="Pages.gen\pageRoleAssignment.cs" />
+    <Compile Include="Pages.gen\pageRoleDefinition.cs" />
+    <Compile Include="Pages.gen\pageRoleDefinitionBinding.cs" />
+    <Compile Include="Pages.gen\pageRoleDefinitionCreationInformation.cs" />
+    <Compile Include="Pages.gen\pageSecurableObject.cs" />
+    <Compile Include="Pages.gen\pageServerSettings.cs" />
+    <Compile Include="Pages.gen\pageSimpleDataRow.cs" />
+    <Compile Include="Pages.gen\pageSimpleDataTable.cs" />
+    <Compile Include="Pages.gen\pageSite.cs" />
+    <Compile Include="Pages.gen\pageSubwebQuery.cs" />
+    <Compile Include="Pages.gen\pageThemeInfo.cs" />
+    <Compile Include="Pages.gen\pageTimeZone.cs" />
+    <Compile Include="Pages.gen\pageTimeZoneInformation.cs" />
+    <Compile Include="Pages.gen\pageULS.cs" />
+    <Compile Include="Pages.gen\pageUpgradeInfo.cs" />
+    <Compile Include="Pages.gen\pageUsageInfo.cs" />
+    <Compile Include="Pages.gen\pageUser.cs" />
+    <Compile Include="Pages.gen\pageUserCreationInformation.cs" />
+    <Compile Include="Pages.gen\pageUserCustomAction.cs" />
+    <Compile Include="Pages.gen\pageUserIdInfo.cs" />
+    <Compile Include="Pages.gen\pageView.cs" />
+    <Compile Include="Pages.gen\pageViewCreationInformation.cs" />
+    <Compile Include="Pages.gen\pageViewField.cs" />
+    <Compile Include="Pages.gen\pageWeb.cs" />
+    <Compile Include="Pages.gen\pageWebCreationInformation.cs" />
+    <Compile Include="Pages.gen\pageWebInfoCreationInformation.cs" />
+    <Compile Include="Pages.gen\pageWebInformation.cs" />
+    <Compile Include="Pages.gen\pageWebProxy.cs" />
+    <Compile Include="Pages.gen\pageWebRequestInfo.cs" />
+    <Compile Include="Pages.gen\pageWebResponseInfo.cs" />
+    <Compile Include="Pages.gen\pageWebTemplate.cs" />
+    <Compile Include="Pages.gen\pageXmlSchemaFieldCreationInformation.cs" />
+    <Compile Include="Pages\pageBase.cs" />
+    <Compile Include="Pages\pageBrowse.cs" />
+    <Compile Include="Pages\pageConfirm.cs" />
+    <Compile Include="Pages\pageGeneric.cs" />
+    <Compile Include="Pages\pageSetup.cs" />
+    <Compile Include="spglb.cs" />
+    <Compile Include="Pages\pageStart.cs" />
+    <Compile Include="SPGet.gen\spcol.cs" />
+    <Compile Include="SPGet.gen\spget.cs" />
+    <Compile Include="SPGet\sproot.cs" />
+    <Compile Include="util.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="xml2dyn.cs" />
+    <Compile Include="AddLine\__deferred_al.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="GettingStarted.Xamarin" />
+    <None Include="hmssp.licenseheader" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="HMSAuth, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\HMSAuth.1.0.1\lib\portable-net45+win8+wpa81\HMSAuth.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HMSUtil, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\HMSAuth.1.0.1\lib\portable-net45+win8+wpa81\HMSUtil.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.9.0.1\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PCLCrypto, Version=2.0.0.0, Culture=neutral, PublicKeyToken=d4421c8a4786956c, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\PCLCrypto.2.0.147\lib\portable-net45+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10\PCLCrypto.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PInvoke.BCrypt, Version=0.3.0.0, Culture=neutral, PublicKeyToken=9e300f9f87f04a7a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\PInvoke.BCrypt.0.3.2\lib\portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10\PInvoke.BCrypt.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PInvoke.Kernel32, Version=0.3.0.0, Culture=neutral, PublicKeyToken=9e300f9f87f04a7a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\PInvoke.Kernel32.0.3.2\lib\portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10\PInvoke.Kernel32.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PInvoke.NCrypt, Version=0.3.0.0, Culture=neutral, PublicKeyToken=9e300f9f87f04a7a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\PInvoke.NCrypt.0.3.2\lib\portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10\PInvoke.NCrypt.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PInvoke.Windows.Core, Version=0.3.0.0, Culture=neutral, PublicKeyToken=9e300f9f87f04a7a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\PInvoke.Windows.Core.0.3.2\lib\portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10\PInvoke.Windows.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Validation, Version=2.2.0.0, Culture=neutral, PublicKeyToken=2fc06f0d701809a7, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Validation.2.2.8\lib\portable-net40+sl50+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10\Validation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Windows">
+      <HintPath>C:\Program Files (x86)\Windows Phone Kits\8.1\References\CommonConfiguration\Neutral\Windows.winmd</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xamarin.Forms.2.3.1.114\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xamarin.Forms.2.3.1.114\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.Platform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Xaml, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xamarin.Forms.2.3.1.114\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.Xaml.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Extensions\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\hmssp\hmssp.csproj">
+      <Project>{67f9d3a8-f71e-4428-913f-c37ae82cdb24}</Project>
+      <Name>hmssp</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Collapse_11x.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <Import Project="..\..\packages\Xamarin.Forms.2.3.1.114\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.3.1.114\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Dieses Projekt verweist auf mindestens ein NuGet-Paket, das auf diesem Computer fehlt. Verwenden Sie die Wiederherstellung von NuGet-Paketen, um die fehlenden Dateien herunterzuladen. Weitere Informationen finden Sie unter "http://go.microsoft.com/fwlink/?LinkID=322105". Die fehlende Datei ist "{0}".</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\..\packages\Xamarin.Forms.2.3.1.114\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Xamarin.Forms.2.3.1.114\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

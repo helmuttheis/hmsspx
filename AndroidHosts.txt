@@ -1,0 +1,21 @@
+Start Debugger 
+
+Extras
+	Android
+		Android ADB Command Prompt
+
+E:\user\hms\xamarin\hmsspx\hmsspx\hmsspx>adb devices
+List of devices attached
+169.254.76.233:5555     device
+
+
+E:\user\hms\xamarin\hmsspx\hmsspx\hmsspx>adb pull /system/etc/hosts e:/tmp
+10 KB/s (56 bytes in 0.005s)
+
+E:\user\hms\xamarin\hmsspx\hmsspx\hmsspx>adb remount
+remount succeeded
+
+E:\user\hms\xamarin\hmsspx\hmsspx\hmsspx>adb push e:/tmp/hosts /system/etc
+50 KB/s (77 bytes in 0.001s)
+
+E:\user\hms\xamarin\hmsspx\hmsspx\hmsspx>

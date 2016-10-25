@@ -1,0 +1,3 @@
+CONNECT TO MAC 
+Start VS as Admin.
+Mac user xamarin/xamarin, no blanks!!!

@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{67F9D3A8-F71E-4428-913F-C37AE82CDB24}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>hmssp</RootNamespace>
+    <AssemblyName>hmssp</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile111</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SPEndpoints\SPEndpoints.cs" />
+    <Compile Include="SPEndpoints\SPEndpoints2010.cs" />
+    <Compile Include="SPEndpoints\SPEndpoints2016.cs" />
+    <Compile Include="SPEndpoints\SPEndpointsOnline.cs" />
+    <Compile Include="SPMissing.cs" />
+    <Compile Include="SPUtil.cs" />
+    <Compile Include="SP.gen\AccessRequests.cs" />
+    <Compile Include="SP.gen\AlternateUrl.cs" />
+    <Compile Include="SP.gen\App.cs" />
+    <Compile Include="SP.gen\AppCatalog.cs" />
+    <Compile Include="SP.gen\AppContextSite.cs" />
+    <Compile Include="SP.gen\AppInstance.cs" />
+    <Compile Include="SP.gen\AppInstanceErrorDetails.cs" />
+    <Compile Include="SP.gen\AppLicense.cs" />
+    <Compile Include="SP.gen\AppLicenseCollection.cs" />
+    <Compile Include="SP.gen\AppPrincipalConfiguration.cs" />
+    <Compile Include="SP.gen\AppPrincipalCredentialReference.cs" />
+    <Compile Include="SP.gen\Attachment.cs" />
+    <Compile Include="SP.gen\AttachmentCollection.cs" />
+    <Compile Include="SP.gen\AttachmentCreationInformation.cs" />
+    <Compile Include="SP.gen\BasePermissions.cs" />
+    <Compile Include="SP.gen\CamlQuery.cs" />
+    <Compile Include="SP.gen\Change.cs" />
+    <Compile Include="SP.gen\ChangeAlert.cs" />
+    <Compile Include="SP.gen\ChangeCollection.cs" />
+    <Compile Include="SP.gen\ChangeContentType.cs" />
+    <Compile Include="SP.gen\ChangeField.cs" />
+    <Compile Include="SP.gen\ChangeFile.cs" />
+    <Compile Include="SP.gen\ChangeFolder.cs" />
+    <Compile Include="SP.gen\ChangeGroup.cs" />
+    <Compile Include="SP.gen\ChangeItem.cs" />
+    <Compile Include="SP.gen\ChangeList.cs" />
+    <Compile Include="SP.gen\ChangeLogItemQuery.cs" />
+    <Compile Include="SP.gen\ChangeQuery.cs" />
+    <Compile Include="SP.gen\ChangeToken.cs" />
+    <Compile Include="SP.gen\ChangeUser.cs" />
+    <Compile Include="SP.gen\ChangeView.cs" />
+    <Compile Include="SP.gen\ChangeWeb.cs" />
+    <Compile Include="SP.gen\ClientContext.cs" />
+    <Compile Include="SP.gen\ContentType.cs" />
+    <Compile Include="SP.gen\ContentTypeCollection.cs" />
+    <Compile Include="SP.gen\ContentTypeCreationInformation.cs" />
+    <Compile Include="SP.gen\ContentTypeId.cs" />
+    <Compile Include="SP.gen\ContextWebInformation.cs" />
+    <Compile Include="SP.gen\DocumentLibraryInformation.cs" />
+    <Compile Include="SP.gen\EventReceiverDefinition.cs" />
+    <Compile Include="SP.gen\EventReceiverDefinitionCollection.cs" />
+    <Compile Include="SP.gen\EventReceiverDefinitionCreationInformation.cs" />
+    <Compile Include="SP.gen\ExternalAppPrincipalCreationParameters.cs" />
+    <Compile Include="SP.gen\Feature.cs" />
+    <Compile Include="SP.gen\FeatureCollection.cs" />
+    <Compile Include="SP.gen\Field.cs" />
+    <Compile Include="SP.gen\FieldCalculated.cs" />
+    <Compile Include="SP.gen\FieldCalculatedErrorValue.cs" />
+    <Compile Include="SP.gen\FieldChoice.cs" />
+    <Compile Include="SP.gen\FieldCollection.cs" />
+    <Compile Include="SP.gen\FieldComputed.cs" />
+    <Compile Include="SP.gen\FieldCreationInformation.cs" />
+    <Compile Include="SP.gen\FieldCurrency.cs" />
+    <Compile Include="SP.gen\FieldDateTime.cs" />
+    <Compile Include="SP.gen\FieldGeolocationValue.cs" />
+    <Compile Include="SP.gen\FieldLink.cs" />
+    <Compile Include="SP.gen\FieldLinkCollection.cs" />
+    <Compile Include="SP.gen\FieldLinkCreationInformation.cs" />
+    <Compile Include="SP.gen\FieldLookup.cs" />
+    <Compile Include="SP.gen\FieldLookupValue.cs" />
+    <Compile Include="SP.gen\FieldMultiChoice.cs" />
+    <Compile Include="SP.gen\FieldMultiLineText.cs" />
+    <Compile Include="SP.gen\FieldNumber.cs" />
+    <Compile Include="SP.gen\FieldRatingScale.cs" />
+    <Compile Include="SP.gen\FieldRatingScaleQuestionAnswer.cs" />
+    <Compile Include="SP.gen\FieldStringValues.cs" />
+    <Compile Include="SP.gen\FieldText.cs" />
+    <Compile Include="SP.gen\FieldUrl.cs" />
+    <Compile Include="SP.gen\FieldUrlValue.cs" />
+    <Compile Include="SP.gen\FieldUser.cs" />
+    <Compile Include="SP.gen\FieldUserValue.cs" />
+    <Compile Include="SP.gen\File.cs" />
+    <Compile Include="SP.gen\FileCreationInformation.cs" />
+    <Compile Include="SP.gen\FileSaveBinaryInformation.cs" />
+    <Compile Include="SP.gen\FileVersion.cs" />
+    <Compile Include="SP.gen\Folder.cs" />
+    <Compile Include="SP.gen\Form.cs" />
+    <Compile Include="SP.gen\FormCollection.cs" />
+    <Compile Include="SP.gen\Group.cs" />
+    <Compile Include="SP.gen\GroupCollection.cs" />
+    <Compile Include="SP.gen\GroupCreationInformation.cs" />
+    <Compile Include="SP.gen\Implementationnotes.cs" />
+    <Compile Include="SP.gen\InformationRightsManagementSettings.cs" />
+    <Compile Include="SP.gen\KeyValue.cs" />
+    <Compile Include="SP.gen\Language.cs" />
+    <Compile Include="SP.gen\List.cs" />
+    <Compile Include="SP.gen\ListCollection.cs" />
+    <Compile Include="SP.gen\ListCreationInformation.cs" />
+    <Compile Include="SP.gen\ListDataSource.cs" />
+    <Compile Include="SP.gen\ListDataValidationExceptionValue.cs" />
+    <Compile Include="SP.gen\ListDataValidationFailure.cs" />
+    <Compile Include="SP.gen\ListItem.cs" />
+    <Compile Include="SP.gen\ListItemCollection.cs" />
+    <Compile Include="SP.gen\ListItemCollectionPosition.cs" />
+    <Compile Include="SP.gen\ListItemCreationInformation.cs" />
+    <Compile Include="SP.gen\ListItemEntityCollection.cs" />
+    <Compile Include="SP.gen\ListItemFormUpdateValue.cs" />
+    <Compile Include="SP.gen\ListTemplate.cs" />
+    <Compile Include="SP.gen\ListTemplateCollection.cs" />
+    <Compile Include="SP.gen\MenuNode.cs" />
+    <Compile Include="SP.gen\MenuState.cs" />
+    <Compile Include="SP.gen\Navigation.cs" />
+    <Compile Include="SP.gen\NavigationNode.cs" />
+    <Compile Include="SP.gen\NavigationNodeCollection.cs" />
+    <Compile Include="SP.gen\NavigationNodeCreationInformation.cs" />
+    <Compile Include="SP.gen\ObjectSharingInformation.cs" />
+    <Compile Include="SP.gen\ObjectSharingInformationUser.cs" />
+    <Compile Include="SP.gen\Principal.cs" />
+    <Compile Include="SP.gen\PropertyValues.cs" />
+    <Compile Include="SP.gen\PushNotificationSubscriber.cs" />
+    <Compile Include="SP.gen\PushNotificationSubscriberCollection.cs" />
+    <Compile Include="SP.gen\RecycleBinItem.cs" />
+    <Compile Include="SP.gen\RecycleBinItemCollection.cs" />
+    <Compile Include="SP.gen\RegionalSettings.cs" />
+    <Compile Include="SP.gen\RelatedField.cs" />
+    <Compile Include="SP.gen\RelatedFieldCollection.cs" />
+    <Compile Include="SP.gen\RelatedFieldExtendedData.cs" />
+    <Compile Include="SP.gen\RelatedFieldExtendedDataCollection.cs" />
+    <Compile Include="SP.gen\RelatedItem.cs" />
+    <Compile Include="SP.gen\RelatedItemManager.cs" />
+    <Compile Include="SP.gen\RenderListDataParameters.cs" />
+    <Compile Include="SP.gen\RequestContext.cs" />
+    <Compile Include="SP.gen\RequestVariable.cs" />
+    <Compile Include="SP.gen\RoleAssignment.cs" />
+    <Compile Include="SP.gen\RoleAssignmentCollection.cs" />
+    <Compile Include="SP.gen\RoleDefinition.cs" />
+    <Compile Include="SP.gen\RoleDefinitionBindingCollection.cs" />
+    <Compile Include="SP.gen\RoleDefinitionCollection.cs" />
+    <Compile Include="SP.gen\RoleDefinitionCreationInformation.cs" />
+    <Compile Include="SP.gen\SecurableObject.cs" />
+    <Compile Include="SP.gen\ServerSettings.cs" />
+    <Compile Include="SP.gen\SimpleDataRow.cs" />
+    <Compile Include="SP.gen\SimpleDataTable.cs" />
+    <Compile Include="SP.gen\Site.cs" />
+    <Compile Include="SP.gen\SubwebQuery.cs" />
+    <Compile Include="SP.gen\ThemeInfo.cs" />
+    <Compile Include="SP.gen\TimeZone.cs" />
+    <Compile Include="SP.gen\TimeZoneCollection.cs" />
+    <Compile Include="SP.gen\TimeZoneInformation.cs" />
+    <Compile Include="SP.gen\ULS.cs" />
+    <Compile Include="SP.gen\UpgradeInfo.cs" />
+    <Compile Include="SP.gen\UsageInfo.cs" />
+    <Compile Include="SP.gen\User.cs" />
+    <Compile Include="SP.gen\UserCollection.cs" />
+    <Compile Include="SP.gen\UserCreationInformation.cs" />
+    <Compile Include="SP.gen\UserCustomAction.cs" />
+    <Compile Include="SP.gen\UserCustomActionCollection.cs" />
+    <Compile Include="SP.gen\UserIdInfo.cs" />
+    <Compile Include="SP.gen\View.cs" />
+    <Compile Include="SP.gen\ViewCollection.cs" />
+    <Compile Include="SP.gen\ViewCreationInformation.cs" />
+    <Compile Include="SP.gen\ViewFieldCollection.cs" />
+    <Compile Include="SP.gen\Web.cs" />
+    <Compile Include="SP.gen\WebCollection.cs" />
+    <Compile Include="SP.gen\WebCreationInformation.cs" />
+    <Compile Include="SP.gen\WebInfoCreationInformation.cs" />
+    <Compile Include="SP.gen\WebInformation.cs" />
+    <Compile Include="SP.gen\WebProxy.cs" />
+    <Compile Include="SP.gen\WebRequestInfo.cs" />
+    <Compile Include="SP.gen\WebResponseInfo.cs" />
+    <Compile Include="SP.gen\WebTemplate.cs" />
+    <Compile Include="SP.gen\WebTemplateCollection.cs" />
+    <Compile Include="SP.gen\XmlSchemaFieldCreationInformation.cs" />
+    <Compile Include="SP\ShowProgress.cs" />
+    <Compile Include="SP\SPMode.cs" />
+    <Compile Include="SP\__deferred.cs" />
+    <Compile Include="SP\__generic.cs" />
+    <Compile Include="SP\__iSP.cs" />
+    <Compile Include="SP\__metadata.cs" />
+    <Compile Include="SP\__status.cs" />
+    <Compile Include="SP\__HMSError.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="HMSAuth, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\HMSAuth.1.0.1\lib\portable-net45+win8+wpa81\HMSAuth.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HMSUtil, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\HMSAuth.1.0.1\lib\portable-net45+win8+wpa81\HMSUtil.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Forms.2.0.0.6482\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Forms.2.0.0.6482\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.Platform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Xaml, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Forms.2.0.0.6482\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.Xaml.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="hmssp.licenseheader" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <Import Project="..\packages\Xamarin.Forms.2.0.0.6482\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.0.0.6482\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Dieses Projekt verweist auf mindestens ein NuGet-Paket, das auf diesem Computer fehlt. Verwenden Sie die Wiederherstellung von NuGet-Paketen, um die fehlenden Dateien herunterzuladen. Weitere Informationen finden Sie unter "http://go.microsoft.com/fwlink/?LinkID=322105". Die fehlende Datei ist "{0}".</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Xamarin.Forms.2.0.0.6482\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Xamarin.Forms.2.0.0.6482\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
